@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Aurelion — Where Talent Meets Opportunity</title>
+<meta name="description" content="Get in touch with Aurelion, apply for a role, or submit a hiring request. Reach our team by phone, email, or the contact form below.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-field"></div>
+  <div class="loader-ring"></div>
+  <div class="loader-panel">
+    <img src="assets/logo.png" alt="">
+    <p class="loader-word">AURELION</p>
+    <div class="loader-track"><div class="loader-track-fill"></div></div>
+    <span class="loader-pct">0%</span>
+  </div>
+</div>
+
+<div class="scroll-progress"><div class="scroll-progress-fill"></div></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Aurelion logo" class="brand-mark">
+      <span class="brand-text">
+        <span class="brand-word">Aurelion</span>
+        <span class="brand-tagline">Where Talent Meets Opportunity</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="services.html#employer-services">For Employers</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="contact.html#job-application" class="btn btn-primary magnetic">Apply Now</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================= PAGE HEADER ============================= -->
+<section class="page-header">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</p>
+    <h1>Let's start the conversation</h1>
+    <p>Whether you're looking for your next role or your next hire, our team is ready to help.</p>
+  </div>
+</section>
+
+<!-- ============================= CONTACT FORM + INFO ============================= -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info-card reveal">
+        <h3>Get in Touch</h3>
+        <ul class="contact-info-list">
+          <li>
+            <span class="icon">&#9679;</span>
+            <div><strong>Address</strong><span>India</span></div>
+          </li>
+          <li>
+            <span class="icon">&#9742;</span>
+            <div><strong>Phone</strong><span>+91 731 400 2200</span></div>
+          </li>
+          <li>
+            <span class="icon">&#9993;</span>
+            <div><strong>Email</strong><span>hello@aurelion.com</span></div>
+          </li>
+          <li>
+            <span class="icon">&#127760;</span>
+            <div><strong>Website</strong><span>www.aurelion.com</span></div>
+          </li>
+        </ul>
+        <div class="map-frame" aria-label="Map placeholder showing Aurelion office location">
+          <iframe title="Aurelion office location" loading="lazy" src=""></iframe>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="form-success" id="contact-success">Thank you &mdash; your message has been received. Our team will get back to you shortly.</div>
+        <form class="form-card" id="contact-form" data-validate novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="c-name" name="name" required>
+              <span class="field-error">Please enter your full name.</span>
+            </div>
+            <div class="field">
+              <label for="c-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="c-email" name="email" required>
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="c-phone" name="phone" required>
+              <span class="field-error">Please enter a valid phone number.</span>
+            </div>
+            <div class="field">
+              <label for="c-city">City <span class="req">*</span></label>
+              <input type="text" id="c-city" name="city" required>
+              <span class="field-error">Please enter your city.</span>
+            </div>
+          </div>
+          <div class="field full">
+            <label for="c-service">Service Required <span class="req">*</span></label>
+            <select id="c-service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Job Placement</option>
+              <option>Resume Assistance</option>
+              <option>Career Counseling</option>
+              <option>Talent Acquisition</option>
+              <option>Campus Recruitment</option>
+              <option>Bulk Hiring</option>
+              <option>Other</option>
+            </select>
+            <span class="field-error">Please select a service.</span>
+          </div>
+          <div class="field full">
+            <label for="c-message">Message <span class="req">*</span></label>
+            <textarea id="c-message" name="message" required></textarea>
+            <span class="field-error">Please enter a message.</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block magnetic">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ADDITIONAL FORMS ============================= -->
+<section class="section section-alt">
+  <div class="container reveal">
+    <div class="section-head center">
+      <p class="kicker" style="justify-content:center"><span class="rule"></span>Apply or Hire</p>
+      <h2>Ready to take the next step?</h2>
+      <div class="gold-divider"></div>
+    </div>
+
+    <div class="tab-row" role="tablist">
+      <button class="tab-btn is-active" type="button" data-tab="job-application">Job Application</button>
+      <button class="tab-btn" type="button" data-tab="employer-hiring">Employer Hiring Request</button>
+    </div>
+
+    <!-- Job Application Form -->
+    <div class="tab-panel is-active" id="job-application">
+      <div class="form-success" id="job-success">Thank you for applying &mdash; our recruitment team will review your profile and be in touch.</div>
+      <form class="form-card" id="job-form" data-validate novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="j-name">Full Name <span class="req">*</span></label>
+            <input type="text" id="j-name" name="name" required>
+            <span class="field-error">Please enter your full name.</span>
+          </div>
+          <div class="field">
+            <label for="j-email">Email <span class="req">*</span></label>
+            <input type="email" id="j-email" name="email" required>
+            <span class="field-error">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="j-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="j-phone" name="phone" required>
+            <span class="field-error">Please enter a valid phone number.</span>
+          </div>
+          <div class="field">
+            <label for="j-city">City <span class="req">*</span></label>
+            <input type="text" id="j-city" name="city" required>
+            <span class="field-error">Please enter your city.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="j-qualification">Qualification <span class="req">*</span></label>
+            <input type="text" id="j-qualification" name="qualification" required placeholder="e.g. B.Tech Computer Science">
+            <span class="field-error">Please enter your qualification.</span>
+          </div>
+          <div class="field">
+            <label for="j-experience">Experience <span class="req">*</span></label>
+            <select id="j-experience" name="experience" required>
+              <option value="">Select experience</option>
+              <option>Fresher</option>
+              <option>0&ndash;1 years</option>
+              <option>1&ndash;3 years</option>
+              <option>3&ndash;5 years</option>
+              <option>5+ years</option>
+            </select>
+            <span class="field-error">Please select your experience level.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="j-role">Desired Role <span class="req">*</span></label>
+            <input type="text" id="j-role" name="role" required placeholder="e.g. Software Engineer">
+            <span class="field-error">Please enter your desired role.</span>
+          </div>
+          <div class="field">
+            <label for="j-linkedin">LinkedIn Profile</label>
+            <input type="url" id="j-linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
+          </div>
+        </div>
+        <div class="field full">
+          <label for="j-resume">Resume Upload <span class="req">*</span></label>
+          <label class="file-drop" for="j-resume">
+            <span class="fname">No file chosen</span> &mdash; click to browse (PDF or DOCX)
+            <input type="file" id="j-resume" name="resume" accept=".pdf,.doc,.docx">
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block magnetic">Submit Application</button>
+      </form>
+    </div>
+
+    <!-- Employer Hiring Form -->
+    <div class="tab-panel" id="employer-hiring">
+      <div class="form-success" id="employer-success">Thank you &mdash; your hiring request has been received. An Aurelion consultant will reach out shortly.</div>
+      <form class="form-card" id="employer-form" data-validate novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="e-company">Company Name <span class="req">*</span></label>
+            <input type="text" id="e-company" name="company" required>
+            <span class="field-error">Please enter your company name.</span>
+          </div>
+          <div class="field">
+            <label for="e-contact">Contact Person <span class="req">*</span></label>
+            <input type="text" id="e-contact" name="contact" required>
+            <span class="field-error">Please enter a contact person.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="e-email">Email <span class="req">*</span></label>
+            <input type="email" id="e-email" name="email" required>
+            <span class="field-error">Please enter a valid email address.</span>
+          </div>
+          <div class="field">
+            <label for="e-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="e-phone" name="phone" required>
+            <span class="field-error">Please enter a valid phone number.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="e-industry">Industry <span class="req">*</span></label>
+            <input type="text" id="e-industry" name="industry" required placeholder="e.g. Information Technology">
+            <span class="field-error">Please enter your industry.</span>
+          </div>
+          <div class="field">
+            <label for="e-positions">Number of Positions <span class="req">*</span></label>
+            <input type="number" id="e-positions" name="positions" min="1" required>
+            <span class="field-error">Please enter the number of positions.</span>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="e-requirement">Hiring Requirement <span class="req">*</span></label>
+          <select id="e-requirement" name="requirement" required>
+            <option value="">Select a requirement type</option>
+            <option>Permanent Staffing</option>
+            <option>Campus Hiring</option>
+            <option>Bulk Hiring</option>
+            <option>Executive Search</option>
+            <option>Recruitment Process Outsourcing</option>
+          </select>
+          <span class="field-error">Please select a hiring requirement.</span>
+        </div>
+        <div class="field full">
+          <label for="e-message">Message <span class="req">*</span></label>
+          <textarea id="e-message" name="message" required placeholder="Tell us about the roles you're hiring for"></textarea>
+          <span class="field-error">Please enter a message.</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block magnetic">Submit Hiring Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Aurelion logo">
+        <p class="footer-tagline">Where Talent Meets Opportunity</p>
+        <p>A global recruitment partner helping talent and companies find each other, across industries and borders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Job Placement</a></li>
+          <li><a href="services.html">Talent Acquisition</a></li>
+          <li><a href="services.html">Campus Hiring</a></li>
+          <li><a href="services.html">Workforce Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>402 Meridian Tower, Corporate Avenue, Indore, MP 452001, India</li>
+          <li>+91 731 400 2200</li>
+          <li>hello@aurelion.com</li>
+        </ul>
+        <div class="social-row">
+          <a href="#" aria-label="Aurelion on LinkedIn">in</a>
+          <a href="#" aria-label="Aurelion on Twitter">X</a>
+          <a href="#" aria-label="Aurelion on Instagram">ig</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Aurelion. All rights reserved.</span>
+      <span>Where Talent Meets Opportunity</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/script.js"></script>
+</body>
+</html>
